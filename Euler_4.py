@@ -12,4 +12,4 @@ def st_palindrom(m, n):
                 st = z
             return st
 
-print(st_palindrom(1, 1))
+print(st_palindrom(100, 1000))
