@@ -1,13 +1,11 @@
-def je_deljiv(n, i):
-    return n % i == 0
-
-def je_deljiv_z_vsemi(n):
-    for i in range(2, n):
-        j = 2 
-        if not(je_deljiv(j, i)):
-            j += 1
-        else:
-            return j
+def je_deljiv_z_vsemi(n, i):
+    for j in range(2, i + 1):
+        if n % j != 0:
+            return False
+    return True
         
+n = 2520
+while not(je_deljiv_z_vsemi(n, 20)):
+    n += 2520
 
-print(je_deljiv_z_vsemi(10))
+print(n)
