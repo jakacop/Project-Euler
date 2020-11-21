@@ -10,11 +10,13 @@ def fibonacci(n):
 #    n += 1
 #    print(n, fibonacci(n))
 
-def stetje(n):
+def stetje():
     vsota = 0
-    for i in range(n):
+    i = 1
+    while fibonacci(i) < 4000000:
+        i += 1
         if fibonacci(i) % 2 == 0:
             vsota = vsota + fibonacci(i)
     return vsota
 
-print(stetje(33))
+print(stetje())
