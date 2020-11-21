@@ -1,8 +1,8 @@
-def krneki(n, i):
-    while i * i <= n:
-        while n % i == 0:
-            n = n // i
-        i += 1
-    return n
+def krneki(m, n):
+    while n * n <= m:
+        while m % n == 0:
+            m = m // n
+        n += 1
+    return m
 
 print(krneki(600851475143, 2))
