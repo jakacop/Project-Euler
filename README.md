@@ -1,2 +1,2 @@
 # Project-Euler
-Moje resitve naloge s strani projecteuler.net.
+Moje rešitve nalog s strani projecteuler.net
