@@ -23,7 +23,14 @@ def vsota_prastevil(n):
         i += 1
     return vsota
 
-i = 0
-while nto_prastevilo(i) < 2000000:
-    i += 1
-    print(i, nto_prastevilo(i), vsota_prastevil(i))
+vsota = 2
+for i in range(3, 2000000):
+    if je_prastevilo(i):
+        vsota += i
+
+print(vsota)
+
+#i = 0
+#while nto_prastevilo(i) < 2000000:
+#    i += 1
+#    print(i, nto_prastevilo(i), vsota_prastevil(i))
