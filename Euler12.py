@@ -1,11 +1,11 @@
 def vsota_n(n):
     return n * (n + 1) // 2
 
-def st_deliteljev(n):
-    stevec = 0
-    for i in range(1, n + 1):
-        stevec = len([i for i in range(1, n + 1) if n % i == 0])
-    return stevec
+#def st_deliteljev(n):
+#    stevec = 0
+#    for i in range(1, n + 1):
+#        stevec = len([i for i in range(1, n + 1) if n % i == 0])
+#    return stevec
 
 def delitelji(n):
     stevec = 0
@@ -16,12 +16,11 @@ def delitelji(n):
             stevec = 2 * len([i for i in range(1, int(n ** 0.5) + 1) if n % i == 0])
     return stevec
 
-n = 0
-def resitev():
-    n = 0
-    while delitelji(n) < 500:
+def resitev(j):
+    n = 1
+    while delitelji(n) < j:
         n += 1
         n = vsota_n(n)
     return n
 
-print(resitev())
+print(resitev(500))
